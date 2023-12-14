@@ -1,3 +1,3 @@
 const sum = require('./sum');
 
-sum(1, 2);
+sum(12, 2);
