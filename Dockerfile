@@ -11,3 +11,9 @@ WORKDIR /app
 RUN npm install
 
 CMD ["node", "index.js"]
+
+#push to docker hub
+RUN docekr build -t dcsenadheera/test-app:1.0 .
+
+#run the docker image
+RUN docker run -p 3000:3000 dcsenadheera/test-app:1.0
