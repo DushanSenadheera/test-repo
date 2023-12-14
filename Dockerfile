@@ -12,7 +12,5 @@ RUN npm install
 
 CMD [ "node", "index.js" ]
 
-RUN docker build -t my-nodejs-app .
-
 
 
