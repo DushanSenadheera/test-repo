@@ -10,14 +10,9 @@ WORKDIR /app
 # Build your application
 RUN npm install
 
-#build the docker image
-RUN docker build -t node-app .
+CMD [ "node", "index.js" ]
 
-#run the docker image
-RUN docker run -p 3000:3000 node-app
-
-#push the docker image to docker hub
-RUN docker push node-app
+RUN docker build -t my-nodejs-app .
 
 
 
